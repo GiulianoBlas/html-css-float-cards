@@ -10,3 +10,31 @@
     clear: both;
     display: table;
 }
+
+main{
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* MAIN */
+#contanier_1{
+    margin-bottom: 30px;
+}
+
+#contanier_1 > h1{
+    margin: 30px;
+    color:rgba(228,49,112,255);
+    font-family: 'Fredoka', sans-serif;
+}
+
+#contanier_1 > p{
+    font-family: 'Fredoka', sans-serif;
+    color: rgb(76, 74, 74);
+}
+
+/* DEBUG */
+#contanier_1{
+    border: 1px solid black;
+}
+
