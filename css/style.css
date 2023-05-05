@@ -38,12 +38,12 @@ main{
 
 /* COLUMNS */
 .columns{
-    width: 370px;
-    float: left
+    width: calc(95%/3);
+    float: left;
 }
 
 .column_2{
-margin-inline: calc((100% - 370px * 3) / 2)
+    margin-inline: calc(5%/2)
 }
 
 /* SLOTS */
@@ -66,26 +66,22 @@ margin-inline: calc((100% - 370px * 3) / 2)
 
 /* PROFILE_INFO */
 .profile_info {
-    width:calc(80% - 10px);
-    margin:5px;
+    width:calc(80% -((79px - 63px)/ 2) );
+    margin:calc((79px - 63px)/ 2); 
     float:left;
     text-align: left;
     
 }
 
-.profile_info > *{
-    display: block;
-    
-}
-
 .profile_info h3,span{
     color: white;
+    display: block;
 }
 
 .profile_info a{
     color: rgba(32,168,199,255);
     text-decoration: none;
-    display: inline;
+    display: inline-block;
 }
 
 .profile_info > a:hover{
