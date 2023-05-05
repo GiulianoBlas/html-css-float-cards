@@ -12,12 +12,15 @@
 }
 
 main{
-    max-width: 1000px;
+    max-width: 80%;
     margin: 0 auto;
     text-align: center;
+    font-family: 'Fredoka', sans-serif;
 }
 
 /* MAIN */
+
+/* CONTANIER_1 */
 #contanier_1{
     margin-bottom: 30px;
 }
@@ -25,16 +28,82 @@ main{
 #contanier_1 > h1{
     margin: 30px;
     color:rgba(228,49,112,255);
-    font-family: 'Fredoka', sans-serif;
 }
 
 #contanier_1 > p{
-    font-family: 'Fredoka', sans-serif;
     color: rgb(76, 74, 74);
 }
+
+/* CONTANIER_2 */
+
+/* COLUMN */
+.columns{
+    width: calc(100%/3);
+}
+
+/* SLOT */
+.slot{
+    margin-bottom: 50px;
+}
+
+/* PROFILE_PIC */
+.profile_pic{
+    width: 20%;
+    vertical-align: middle;
+    float: left;
+}
+.profile_pic >img{
+    display: block;
+    width: 100%;
+}
+/* PROFILE_INFO */
+.profile_info {
+    width:calc(80% - 10px);
+    margin:5px;
+    float:left
+}
+
+.profile_info > *{
+    display: block;
+    text-align: left;
+}
+
+.profile_info h3,span{
+    color: white;
+}
+
+.profile_info a{
+    color: rgba(32,168,199,255);
+}
+
+
+
+
+
 
 /* DEBUG */
 #contanier_1{
     border: 1px solid black;
 }
+
+.columns{
+    border: 1px solid orangered;
+    
+}
+
+.slot{
+    border: 1px solid green;
+    background-color: rgba(15,14,23,255);
+
+}
+
+.description{
+    border: 1px solid violet;
+}
+
+.profile_pic{
+    border: 1px solid blue;
+}
+
+
 
