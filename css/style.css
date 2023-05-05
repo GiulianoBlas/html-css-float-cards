@@ -5,17 +5,17 @@
     box-sizing: border-box;
 }
 
-.clearfix::after{
-    content: "";
-    clear: both;
-    display: table;
-}
-
 main{
     max-width: 80%;
     margin: 0 auto;
     text-align: center;
     font-family: 'Fredoka', sans-serif;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
 }
 
 /* MAIN */
@@ -36,36 +36,46 @@ main{
 
 /* CONTANIER_2 */
 
-/* COLUMN */
+/* COLUMNS */
 .columns{
-    width: calc(100%/3);
+    width: 370px;
+    float: left
 }
 
-/* SLOT */
+.column_2{
+margin-inline: calc((100% - 370px * 3) / 2)
+}
+
+/* SLOTS */
 .slot{
     margin-bottom: 50px;
+    background-color: rgba(15,14,23,255);
+    box-shadow: 2px 2px 2px 2px rgba(209,209,208,255)
 }
 
 /* PROFILE_PIC */
 .profile_pic{
     width: 20%;
-    vertical-align: middle;
     float: left;
 }
+
 .profile_pic >img{
     display: block;
     width: 100%;
 }
+
 /* PROFILE_INFO */
 .profile_info {
     width:calc(80% - 10px);
     margin:5px;
-    float:left
+    float:left;
+    text-align: left;
+    
 }
 
 .profile_info > *{
     display: block;
-    text-align: left;
+    
 }
 
 .profile_info h3,span{
@@ -74,16 +84,23 @@ main{
 
 .profile_info a{
     color: rgba(32,168,199,255);
+    text-decoration: none;
+    display: inline;
+}
+
+.profile_info > a:hover{
+    color:rgba(228,49,112,255);
 }
 
 
 
-
-
-
-/* DEBUG */
+/* DEBUG 
 #contanier_1{
     border: 1px solid black;
+}
+
+#contanier_2{
+    border: 1px solid gray;
 }
 
 .columns{
@@ -93,8 +110,6 @@ main{
 
 .slot{
     border: 1px solid green;
-    background-color: rgba(15,14,23,255);
-
 }
 
 .description{
@@ -103,7 +118,6 @@ main{
 
 .profile_pic{
     border: 1px solid blue;
-}
-
-
+} 
+*/
 
